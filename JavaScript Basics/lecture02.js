@@ -100,7 +100,7 @@ let full_name = "ramesh" + " kumar";
 let ans = 5 > 3 ? "Yes" : "No";
 // console.log(ans);               // Yes
 
-// 8. ype Operators:-
+// 8. Type Operators:-
 //Check or change data types: typeof, instanceof.
 
 // console.log(typeof "string");           // string
