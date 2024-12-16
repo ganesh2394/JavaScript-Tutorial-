@@ -9,7 +9,7 @@
  * The break statement is used to exit a loop or switch statement immediately, regardless of the
  * loop's condition or remaining iterations.
  *
- * Key points :
+ * Key points : 
  *  -> Exits the current loop or block completely.
  *  -> Often used in switch statements or loops to stop execution once a certain condition is met.
  */

@@ -1,0 +1,67 @@
+                            JavaScript Loops
+
+    Loops in JavaScript allow us to execute a block of code repeatedly, based on a condition. 
+    They are a fundamental part of programming and help automate repetitive tasks.
+
+   # Types of Loops in JavaScript
+    1. for Loop
+    2. while Loop
+    3. do...while Loop
+    4. for...in Loop
+    5. for...of Loop
+
+
+1. for Loop:-
+The for loop is used when you know the number of iterations beforehand. It has three parts: 
+    -> Initialization: Sets up a starting point.
+    -> Condition: Checks if the loop should continue.
+    -> Increment/Decrement: Updates the loop variable after each iteration.
+
+Syntax : 
+
+for (initialization; condition; increment/decrement) {
+  // Code to execute
+}
+
+2. while Loop:-
+The while loop is used when the number of iterations is not known in advance. 
+The loop runs as long as the condition is true.
+
+Syntax : 
+
+while (condition) {
+  // Code to execute
+}
+
+
+3. do...while Loop:-
+The do...while loop is similar to the while loop, but it executes the code block at least once, 
+regardless of the condition.
+
+Syntax : 
+
+do {
+  // Code to execute
+} while (condition);
+
+
+4. for...in Loop:-
+The for...in loop is used to iterate over the properties (keys) of an object. 
+It works with objects or arrays, but it is specifically designed for objects.
+
+Syntax:
+
+for (key in object) {
+  // Code to execute
+}
+
+5. for...of Loop:-
+The for...of loop is used to iterate over iterable objects like arrays, strings, or Map and Set.
+
+Syntax:
+
+for (variable of iterable) {
+  // Code to execute
+}
+
+
