@@ -179,4 +179,60 @@ let sum = add(8, 9); // invoke function
 let greet = function (name) {
   return `Hello ${name}`;
 };
-console.log(greet("Ganesh")); // Hello Ganesh
+// console.log(greet("Ganesh")); // Hello Ganesh
+
+/** 4. Map
+     * A Map is an object that stores key-value pairs, 
+     * where keys can be of any type (including objects and functions).
+     *syntax : 
+      let map = new Map();
+      map.set(key, value);
+
+ */
+
+let map = new Map();
+map.set("name", "himesh");
+map.set(1, "one");
+
+// console.log(map.get("name"));    // himesh
+// console.log(map.size);           // 2
+
+
+/** 5. Set
+     * A Set is a collection of unique values. 
+     * It does not allow duplicate values.
+     *syntax : 
+      let set = new Set([values]);
+
+ */
+
+let set = new Set([1, 2, 3, 4, 5]);
+// console.log(set);                 // Set(5) { 1, 2, 3, 4, 5 }
+
+set.add(6);
+// console.log(set.has(2));      // true
+
+
+/** 6. Date
+     * The Date object is used to work with dates and times. 
+     * It provides various methods for manipulating dates.
+     *syntax : 
+      let date = new Date();
+
+ */
+
+
+let currentDate = new Date();
+// console.log(currentDate);        // 2024-12-16T06:56:47.097Z
+
+let specificDate = new Date("2024-12-15");
+// console.log(specificDate);          // 2024-12-15T00:00:00.000Z
+
+// console.log(currentDate.getFullYear());    // 2024
+// console.log(currentDate.getMonth());       // 11 (zero-based)
+// console.log(currentDate.getDate());        // 16
+
+   
+
+
+
