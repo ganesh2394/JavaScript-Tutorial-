@@ -1,0 +1,16 @@
+             JavaScript Operators
+
+JavaScript Operators are symbols used to perform specific mathematical, 
+comparison, assignment, and logical computations on operands.
+
+# Types of JavaScript Operators
+    1. Arithmetic Operators : These operators are used to perform mathematical calculations.
+    2. Assignment Operators : These are used to assign values to variables.
+    3. Comparison Operators : These are used to compare two values and return a boolean (true or false).
+    4. Logical Operators : These operators are used to combine multiple conditions.
+    5. Bitwise Operators : These operate on binary numbers.
+    6. String Operators : These are used to work with strings.
+    7. Ternary Operators : A shorthand for if-else.
+    8. Type Operators : Used to determine or work with the type of a variable.
+
+
