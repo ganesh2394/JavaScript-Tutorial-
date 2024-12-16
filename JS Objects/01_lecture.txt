@@ -1,0 +1,79 @@
+                        Objects in JavaScript
+
+In JavaScript, an object is a collection of related data and/or functionality,
+organized into key-value pairs. It is one of the most important and flexible data 
+structures in JavaScript.
+
+# What is an Object ? 
+An object is a non-primitive data type that allows you to store multiple values in a single variable. 
+It consists of properties (data) and methods (functions).
+
+Example : 
+
+const person = {
+  name: "Alice",
+  age: 25,
+  isStudent: true,
+  greet: function () {
+    console.log("Hello, I am " + this.name);
+  }
+};
+
+
+# Creating Objects:-
+
+1. Object Literals (Simplest Method)
+You can define an object using curly braces {}.
+
+const car = {
+  brand: "Toyota",
+  model: "Corolla",
+  year: 2023
+};
+
+2. Using the new Object() Constructor
+
+const book = new Object();
+book.title = "JavaScript Guide";
+book.author = "John Doe";
+book.pages = 450;
+
+3. Using Constructor Functions
+You can create a template for objects using a function.
+
+function Person(name, age) {
+  this.name = name;
+  this.age = age;
+}
+
+const person1 = new Person("Alice", 25);
+const person2 = new Person("Bob", 30);
+
+console.log(person1.name); // Outputs: Alice
+console.log(person2.age);  // Outputs: 30
+
+4. Using Classes (ES6 Feature)
+Classes provide a more structured way to create objects.
+
+class Animal {
+  constructor(name, type) {
+    this.name = name;
+    this.type = type;
+  }
+
+  sound() {
+    console.log(this.name + " makes a sound.");
+  }
+}
+
+const dog = new Animal("Dog", "Mammal");
+dog.sound(); // Outputs: Dog makes a sound.
+
+
+important Notes :-
+1. Objects in JavaScript store data as key-value pairs.
+2. They can have properties (data) and methods (functions).
+3. You can create objects using literals, constructors, or classes.
+4. Objects can be manipulated dynamically by adding, updating, or deleting properties.
+5. JavaScript provides built-in methods like Object.keys(), Object.values(), and Object.assign() to work with objects efficiently.
+
