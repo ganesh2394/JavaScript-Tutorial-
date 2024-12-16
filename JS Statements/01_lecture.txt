@@ -1,0 +1,24 @@
+                         JavaScript Statements
+
+In JavaScript, statements are instructions that the browser executes to perform specific 
+actions, such as declaring variables, performing calculations, or controlling the program's 
+flow.
+
+Key Characteristics :-
+1. Case-Sensitive
+2. Semicolon usage
+3. Whitespace an line break
+
+Types : 
+    1. Declaration statements
+    2. Assignment statements
+    3. Conditional statements 
+    4. Looping statements
+    5. Control statements 
+    6. Exception Handling Statements
+    7. Return Statement
+    8. JavaScript Expressions
+    9. Empty Statement
+
+    
+
