@@ -57,7 +57,7 @@ const dog = new Animal("Dog", "Mammal");
 // console.log(person["name"]);        // rahul
 // console.log(person["age"]);         // 28
 
-/** Modifying Objects
+/** # Modifying Objects
     You can add, update, or delete properties dynamically.
  */
 
@@ -78,7 +78,7 @@ car.model = "Corolla";
 delete car.model;
 // console.log(car); // { brand: 'Toyota' }
 
-// Iterating Over Object Properties
+// # Iterating Over Object Properties
 
 const p1 = {
   name: "ram kumar",
@@ -91,10 +91,91 @@ const p1 = {
 // }
 
 // 2. Using Object.keys()
-console.log(Object.keys(p1)); // [ 'name', 'age', 'location' ]
+// console.log(Object.keys(p1)); // [ 'name', 'age', 'location' ]
 
 // 3. Using Object.values()
-console.log(Object.values(p1)); // [ 'ram kumar', 26, 'indore' ]
+// console.log(Object.values(p1)); // [ 'ram kumar', 26, 'indore' ]
 
 // 4. Using Object.entries()
-console.log(Object.entries(p1)); // [ [ 'name', 'ram kumar' ], [ 'age', 26 ], [ 'location', 'indore' ] ]
+// console.log(Object.entries(p1)); // [ [ 'name', 'ram kumar' ], [ 'age', 26 ], [ 'location', 'indore' ] ]
+
+// # Built-in Objects in JavaScript
+// JavaScript provides several built-in objects, such as:
+
+// Math
+
+// console.log(Math.max(1,2,5,7,3));   // 7
+// console.log(Math.sqrt(16));         // 4
+
+// Date
+const today = new Date();
+// console.log(today);         // 2024-12-17T05:11:29.311Z
+
+// Object Methods :-
+// Object.keys() : Returns an array of property names.
+// Object.values() : Returns an array of property values.
+// and Object.entries() : Returns an array of key-value pairs.
+
+// Object.assign() : Copies properties from one object to another.
+
+const target = { 1: "a" };
+const source = { 2: "b" };
+
+// console.log(target);    // { '1': 'a' }
+// console.log(source);    // { '2': 'b' }
+
+Object.assign(target, source);
+
+// console.log(target);    // { '1': 'a', '2': 'b' }
+// console.log(source);    // { '2': 'b' }
+
+/** Special Features of Objects
+ *  1. Dynamic Properties
+       You can add or modify properties at runtime.
+    2. Nested Objects
+       Objects can contain other objects.
+    3. Prototype-based Inheritance
+       Objects can inherit properties and methods from other objects.
+ */
+
+// dynamic property
+const obj = {};
+// console.log(obj);         //{}
+obj.new_prop = "Hello!";
+// console.log(obj);         // { new_prop: 'Hello!' }
+
+// nested objects : object inside object
+const student = {
+  user_name: {
+    full_name: {
+      first_name: "ramesh",
+      last_name: "sharma",
+    },
+  },
+  address: {
+    city: "Mumbai",
+    country: "India",
+    zip: "10214",
+  },
+
+  age: 34,
+};
+
+// accesss properties
+let student_name = student?.user_name?.full_name?.first_name;
+// console.log(student_name); // ramesh
+
+// Prototype-based Inheritance
+
+const parent = {
+  greet: function () {
+    console.log("Good Morning !");
+  },
+};
+
+const child = Object.create(parent);
+child.greet(); // inherits the parent property.
+
+
+// end...
+
