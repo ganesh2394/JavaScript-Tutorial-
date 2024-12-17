@@ -67,3 +67,7 @@ console.log("Degree:", personProfile.eduction?.degree);
 console.log("Degree:", personProfile.eduction?.collage);
 console.log("Degree:", personProfile.eduction?.year);
 personProfile.greet();
+
+
+
+// end 
