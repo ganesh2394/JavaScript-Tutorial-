@@ -1,5 +1,12 @@
 // Object Creation
 
+/**  syntax : 
+ *    let obj = {
+    key1: value1,
+    key2: value2,
+    ...
+  };
+ */
 // Way-01 : Using Literals
 const person = {
   name: "rahul",
@@ -174,8 +181,29 @@ const parent = {
 };
 
 const child = Object.create(parent);
-child.greet(); // inherits the parent property.
+// child.greet(); // inherits the parent property.
 
 
 // end...
+
+
+// add symbol inside the object
+
+let uniqueId = Symbol("id");
+console.log(typeof uniqueId)      // symbol
+
+let user = {
+  name : "Alice",
+  age : 28,
+};
+
+console.log(user);    // { name: 'Alice', age: 28 }
+
+// Adding Symbol to the object
+user[uniqueId] = "user123";
+
+console.log(user[uniqueId]);    // user123
+console.log(typeof user[uniqueId]);     // string bcz it contains text
+
+
 
