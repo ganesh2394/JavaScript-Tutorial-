@@ -1,0 +1,36 @@
+                Functions in JavaScript
+
+Functions in JavaScript are reusable blocks of code designed to perform a specific task. 
+They make code modular, reusable, and organized. A function can take input (parameters), 
+process it, and return output (or simply perform an action).
+
+# Key Characteristics of Functions:-
+1. Reusability: Functions can be reused multiple times with different inputs.
+2. Modularity: They help break code into smaller, logical units.
+3. Parameterization: Functions can accept parameters to customize their behavior.
+4. Return Values: Functions can return a value or simply perform an action.
+
+
+# Syntax of function : 
+function functionName(parameters) {
+    // Code to be executed
+    return value; // Optional
+}
+
+-> functionName: The name of the function.
+-> parameters: Optional inputs the function can take.
+-> return: The output the function provides. If no return statement is used, the function returns undefined.
+
+# Types of Functions in JavaScript:-
+1. Named Functions
+2. Anonymous Functions
+3. Arrow Functions
+4. IIFE (Immediately Invoked Function Expressions)
+5. Function Expressions
+6. Constructor Functions
+
+Advantages of Functions:-
+1. Code Reusability: Write once, use multiple times.
+2. Maintainability: Easier to manage and debug code.
+3. Readability: Breaks code into smaller, logical parts.
+4. Customizability: Parameters allow flexible inputs.

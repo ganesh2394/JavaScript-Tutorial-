@@ -23,23 +23,22 @@
 // How to Use JSON in JavaScript : JSON objects are written in a specific format and can represent data.
 
 let jsonData = {
-    "name":"Amar",
-    "age":24,
-    "isStudent":true,
-    "skills":["Javascript", "java", "python"],
-    "address":{
-         "city":"delhi",
-         "zipcode":"14521",
-    },
-    "graduationYear":null,
+  name: "Amar",
+  age: 24,
+  isStudent: true,
+  skills: ["Javascript", "java", "python"],
+  address: {
+    city: "delhi",
+    zipcode: "14521",
+  },
+  graduationYear: null,
 };
 
 // Accessing JSON data : Use dot notation (.) or bracket notation ([]) to access JSON properties.
 
 // console.log(jsonData.name);
-// console.log(jsonData[age])      //  Error : ReferenceError: age is not defined   
+// console.log(jsonData[age])      //  Error : ReferenceError: age is not defined
 // console.log(jsonData["age"]);
-
 
 // ## Stringifying JSON (Convert JSON Object to String)
 // Use JSON.stringify() to convert a JSON object into a string, useful for sending data to a server.
@@ -84,4 +83,3 @@ console.log(parsedData);
 }
 
  */
-
