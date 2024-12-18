@@ -206,4 +206,19 @@ console.log(user[uniqueId]);    // user123
 console.log(typeof user[uniqueId]);     // string bcz it contains text
 
 
+// another exmaple of adding symbol into the object
+
+// creating a symbol
+let carId = Symbol("carIdentifier");
+
+let new_car = {
+    brand : "Toyota",
+    model : "Corolla",
+    [carId] : "Car2024"
+};
+
+// Accessing the Symbol property
+console.log(new_car[carId]);
+
+
 
