@@ -186,9 +186,6 @@ const child = Object.create(parent);
 
 // end...
 
-
-// add symbol inside the object
-
 let uniqueId = Symbol("id");
 console.log(typeof uniqueId)      // symbol
 
@@ -205,7 +202,6 @@ user[uniqueId] = "user123";
 console.log(user[uniqueId]);    // user123
 console.log(typeof user[uniqueId]);     // string bcz it contains text
 
-
 // another exmaple of adding symbol into the object
 
 // creating a symbol
@@ -219,6 +215,4 @@ let new_car = {
 
 // Accessing the Symbol property
 console.log(new_car[carId]);
-
-
 
