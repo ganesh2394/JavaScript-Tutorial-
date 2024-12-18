@@ -1,4 +1,4 @@
-// simple function : to add two number
+// simple function : to add two numbers
 
 function addTwo(num1, num2) {
   return num1 + num2;
@@ -176,7 +176,7 @@ function sumAll(...numbers) {
  * initail value is = 0
  */
 
-        
+
 /** 10. Callback Function
     A callback function is passed as an argument to another function and executed later.
     syntax : 
