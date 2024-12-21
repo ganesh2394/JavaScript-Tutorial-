@@ -1,0 +1,39 @@
+                            JavaScript Set
+
+    A Set in JavaScript is a collection of unique values. It stores each value only once, 
+    even if you attempt to add duplicates. Unlike arrays, Set automatically ensures that its 
+    values are unique.
+
+    # Features of Set:-
+    1. Unique Values: Duplicate values are not allowed.
+    2. Value Equality: Set uses the "SameValueZero" algorithm for value comparison, which is similar to strict equality (===).
+    3. Data Types: Can store any data type, including primitives (strings, numbers, booleans) and object references.
+    4. Order of Elements: A Set maintains the order of elements based on their insertion order.
+
+    # Creating a Set:-
+    You can create a Set using the new Set() constructor.
+    syntax : 
+    let mySet = new Set();
+
+
+    # Methods of Set:-
+    1. add(value): Adds a value to the Set.
+    2. delete(value): Removes a value from the Set.
+    3. has(value): Checks if the Set contains a specific value.
+    4. clear(): Removes all elements from the Set.
+    5. size: Returns the number of elements in the Set.
+
+# Iterating Through a Set :- 
+1. values(): Returns an iterator for the values.
+2. keys(): Same as values() (provided for consistency with Map).
+3. entries(): Returns an iterator for [value, value] pairs (for compatibility with Map).
+4. forEach(callback): Executes a callback for each value in the Set.
+
+
+# Use Cases of Set :-
+1. Removing duplicates from an array.
+2. Maintaining a collection of unique items (e.g., user IDs, email addresses).
+3. Tracking unique events or actions in real-time applications.
+
+
+
