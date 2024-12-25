@@ -1,0 +1,116 @@
+                                Async and Await in JavaScript
+
+    Async and Await are modern features of JavaScript introduced in ES2017 (ES8) to handle 
+    asynchronous operations. They provide a simpler and more readable way to work with Promises 
+    by avoiding the need for chaining .then() and .catch() methods.
+
+# What is async?
+The async keyword is used to declare an asynchronous function. An asynchronous function always 
+returns a Promise implicitly, even if you don’t explicitly return a Promise.
+
+Syntax :-
+async function functionName() {
+    // Function body
+}
+
+Characteristics :-
+1. Functions declared with async automatically return a Promise.
+2. The return value of the function is resolved as the value of the returned Promise.
+
+# What is await?
+The await keyword is used inside async functions to pause the execution of the function until a Promise is resolved or rejected.
+
+Syntax:
+let result = await promise;
+
+Characteristics:-
+1. await can only be used inside an async function.
+2. It pauses the execution of the function until the Promise is settled (resolved or rejected).
+3. After the Promise is resolved, await returns the resolved value. If the Promise is rejected, it throws an error that can be caught using a try-catch block.
+
+
+## What Are Promises in JavaScript?
+
+A Promise in JavaScript is an object that represents the eventual completion (or failure) of an
+asynchronous operation and its resulting value. It's a more robust alternative to handling
+asynchronous operations compared to callbacks, making code easier to manage and avoid the
+"callback hell."
+
+## Promise Lifecycle
+A Promise can have three states:
+
+1. Pending: The initial state. The promise is neither fulfilled nor rejected.
+2. Fulfilled: The asynchronous operation has completed successfully, and a value is available.
+3. Rejected: The asynchronous operation failed, and an error is available.
+
+State Transitions:
+-> A Promise starts in the pending state.
+-> It transitions to fulfilled with a resolved value or to rejected with an error.
+-> Once a Promise is either fulfilled or rejected, it becomes settled, and its state cannot change further.
+
+
+## Creating a Promise
+The Promise constructor is used to create a new Promise.
+
+Syntax:
+let promise = new Promise((resolve, reject) => {
+    // Asynchronous operation
+    if (/* success */) {
+        resolve('Operation successful');
+    } else {
+        reject('Operation failed');
+    }
+});
+
+* resolve(value): Marks the Promise as fulfilled and provides a value.
+* reject(error): Marks the Promise as rejected and provides an error.
+
+example of promise : 
+let promise = new Promise((resolve, reject) => {
+    let isSuccess = true;
+
+    if (isSuccess) {
+        resolve('Operation was successful!');
+    } else {
+        reject('Operation failed.');
+    }
+});
+
+promise
+    .then((message) => {
+        console.log(message); // Logs "Operation was successful!"
+    })
+    .catch((error) => {
+        console.error(error); // Handles any rejection
+    });
+
+Using Promises:-
+Promises provide .then() and .catch() methods to handle asynchronous results.
+
+.then()
+Used to handle the resolved value of a Promise.
+promise.then((result) => {
+    console.log(result);
+});
+
+
+.catch()
+Used to handle errors or rejected Promises.
+promise.catch((error) => {
+    console.error(error);
+});
+
+
+.finally()
+Executes code after the Promise is settled, regardless of whether it was fulfilled or rejected.
+promise.finally(() => {
+    console.log('Promise is settled!');
+});
+
+
+# Advantages of Async and Await
+
+1. Improved Readability: Async and Await allow asynchronous code to be written in a synchronous style, making it easier to read and understand.
+2. Error Handling: Using try/catch blocks with async/await simplifies error handling.
+3. Avoids Callback Hell: Async and Await prevent nested callbacks and complex promise chains, making the code more linear and readable.
+4. Better Debugging: Debugging async/await code is more intuitive since it behaves similarly to synchronous code.

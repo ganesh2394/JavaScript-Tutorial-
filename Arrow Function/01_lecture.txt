@@ -1,0 +1,100 @@
+                        Arrow functions in JavaScript
+
+An arrow function is a shorter syntax for writing functions in JavaScript. 
+Introduced in ES6, arrow functions allow for a more concise and readable code, 
+especially in cases of small functions. 
+
+# Syntax of an Arrow Function:-
+  The general syntax of an arrow function is:
+  (parameter1, parameter2, ...) => { 
+     // function body
+    }
+
+1. Parentheses (): Used to enclose parameters. If there’s only one parameter, you can omit the parentheses.
+
+2. Arrow =>: Separates the parameter list from the function body.
+
+3. Function Body:
+For a single expression, you can omit the curly braces {} and the return keyword. The expression result is returned automatically.
+For multiple statements, you must use {} and include a return keyword for returning values.
+
+Note:
+1. Arrow functions are written with the => symbol, which makes them compact.
+2. They don’t have their own this. They inherit this from the surrounding context.
+3. For functions with a single expression, the return is implicit, making the code more concise.
+4. Arrow functions do not have access to the arguments object, which is available in regular functions.
+
+
+Example :- 
+const add = (a, b) => a + b;
+console.log(add(5, 3));
+
+Explanation :-
+‘add’ is an arrow function that takes two parameters a and b, and returns their sum.
+The arrow function’s concise syntax eliminates the need for the function keyword and curly braces for single-line expressions.
+
+1. Arrow Function without Parameters:-
+An arrow function without parameters is defined using empty parentheses (). 
+This is useful when you need a function that doesn’t require any arguments.
+
+const sayHello() =>{
+   console.log("Hello Manushya!");
+}
+
+sayHello();
+output : Hello Manushya
+
+2. Arrow Function with Single Parameters:-
+If your arrow function has a single parameter, you can omit the parentheses around it.
+
+const square = x => x*x;
+console.log(square(4));
+
+output : 16
+
+3. Arrow Function with Multiple Parameters:-
+Arrow functions with multiple parameters, like (param1, param2) => { }, 
+simplify writing concise function expressions in JavaScript, useful for 
+functions requiring more than one argument.
+
+const add = (a, b, c) =>{
+    console.log(a + b + c);
+}
+
+add(4,5,6);
+output : 15
+
+4. Arrow Function with Default Parameters:-
+Arrow functions support default parameters, allowing predefined values if no argument is passed,
+making JavaScript function definitions more flexible and concise.
+
+const additon = ( x, y, z = 30 ) => {
+    console.log( x + " " + y + " " + z);
+}
+
+additon( 10, 20 );
+output : 10 20 30
+
+5. Return Object Literals:-
+In JavaScript, returning object literals within functions is concise: () => ({ key: value }) 
+returns an object { key: value }, useful for immediate object creation and returning.
+
+const makePerson = (firstName, lastName) =>
+({first: firstName, last: lastName});
+
+
+console.log(makePerson("Anuj", "Sharma"));
+
+{ first: 'Pankaj', last: 'Bind' }
+
+
+# Async Arrow Functions:-
+Arrow functions can be made asynchronous by adding the async keyword before the parameter list.
+
+const fetchData = async () => {
+    const data = await fetch('https://api.example.com/data');
+    return data.json();
+};
+
+
+
